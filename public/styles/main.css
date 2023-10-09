@@ -1,0 +1,108 @@
+body {
+  background: linear-gradient(90deg, #ff4e50, #f9d423);
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  animation: fadeIn 1.5s ease;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: #ff4e50;
+  animation: slideInDown 1.5s ease;
+}
+
+input {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 0;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+  color: #ff4e50;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+input:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.container {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  max-width: 400px; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  margin-top: 100px; /* Add some top margin for spacing */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+}
+
+.container h1 {
+  font-size: 24px;
+  color: #333; /* Adjust the text color as needed */
+}
+
+.container form {
+  margin-top: 20px; /* Add some top margin for spacing */
+}
+
+.container input[type="submit"] {
+  background-color: #ff4e50; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container input[type="submit"]:hover {
+  background-color: #ff3336; /* Hover color for the button */
+}
